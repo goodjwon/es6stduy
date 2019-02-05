@@ -1,0 +1,27 @@
+
+
+function addMark() {
+
+    let newArr =[];
+    for(let i =0; i< arguments.length; i++){
+        newArr.push(arguments[i]+"!");
+    }
+
+    console.log(newArr);
+    
+}
+
+addMark(1,23,4,5,6,10);
+
+
+
+function newAddMark() {
+    let newArray = Array.from(arguments);
+    let newArr = newArray.map((value)=>{
+        return value+"!";
+    });
+
+    console.log(newArr);
+}
+
+newAddMark(1,23,4,5,6,10);
